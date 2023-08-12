@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Libre+Franklin:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/166f841558.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Iron Force</title>
+  </head>
+  <body>
+    <div class="cursor"><img src="./images/cursor.png" /></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">about</a></li>
+        <li>
+          <a href="./index.html">products</a>
+          <ul class="dropdown">
+            <li><a href="#">DUMBBELL & BARBELL</a></li>
+            <li><a href="#">PLATES</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./index.html"
+            ><img src="./images/logo.png" alt="Iron Force Logo"
+          /></a>
+        </li>
+        <li><a href="./index.html">gallery</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+      <div class="mobile-nav-logo">
+        <img src="./images/logo.png" alt="mobile_logo" />
+      </div>
+      <ul class="mobile-nav-menu">
+        <li class="mobile-nav-item">
+          <a href="">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="">Dumbbell & Barbell</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="">Plates</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="">Gallery</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="wrapper">
+        <div class="myslider firstslide">
+          <div class="slider-txt">
+            <h1>ANYTHING ELSE IS A COMPROMISE.</h1>
+            <p>Our heavy-duty free weights are built to last.</p>
+            <a href="#main-products">view products</a>
+          </div>
+          <img
+            class="image"
+            src="./images/002-home-sliders-2.jpg"
+            alt="dumbbell"
+          />
+        </div>
+
+        <div class="myslider">
+          <div class="slider-txt">
+            <h1>ANYTHING ELSE IS A COMPROMISE.</h1>
+            <p>Our heavy-duty free weights are built to last.</p>
+            <a href="products.html">about us</a>
+          </div>
+          <img class="image" src="./images/plate.png" alt="dumbbell" />
+        </div>
+
+        <div class="myslider">
+          <div class="slider-txt">
+            <h1>ANYTHING ELSE IS A COMPROMISE.</h1>
+            <p>Our heavy-duty free weights are built to last.</p>
+            <a href="products.html">view gallery</a>
+          </div>
+          <img class="image" src="./images/dumbbell.png" alt="dumbbell" />
+        </div>
+
+        <div class="myslider">
+          <div class="slider-txt">
+            <h1>ANYTHING ELSE IS A COMPROMISE.</h1>
+            <p>Our heavy-duty free weights are built to last.</p>
+            <a href="products.html">contact us</a>
+          </div>
+          <img class="image" src="./images/plate2.png" alt="dumbbell" />
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)">&lt;</a>
+        <a class="next" onclick="plusSlide(1)">&gt;</a>
+
+        <div class="radiobox">
+          <span class="radio" onclick="currentSlide(1)"></span>
+          <span class="radio" onclick="currentSlide(2)"></span>
+          <span class="radio" onclick="currentSlide(3)"></span>
+          <span class="radio" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+
+      <div id="main-products" class="main-products">
+        <div class="main-products-introduction">
+          <h1>Since 2023</h1>
+          <p>
+            Iron Force was founded in 2023 with the simple but revolutionary
+            idea of putting hand grips in Olympic weight plates. Now, with over
+            25 years of hands-on experience in innovative equipment design and
+            manufacturing, we are the largest provider of premium commercial
+            free weight equipment worldwide. Our exclusively American-made
+            dumbbells, barbells, weight plates, and Olympic bars lead the way in
+            quality and customer satisfaction.
+          </p>
+        </div>
+        <div class="main-products-view">
+          <div class="main-products-details">
+            <img src="./images/products/d3-min.jpg" alt="#" />
+            <h2>Dumbbell</h2>
+            <p>
+              Industrial-strength materials and construction outperform the
+              competition.
+            </p>
+            <a href="./dumbbell.html">View Product</a>
+          </div>
+          <div class="main-products-details">
+            <img src="./images/products/d2-min.jpg" alt="#" />
+            <h2>Dumbbell</h2>
+            <p>
+              Industrial-strength materials and construction outperform the
+              competition.
+            </p>
+            <a href="./dumbbell.html">View Product</a>
+          </div>
+          <div class="main-products-details">
+            <img src="./images/products/p1-min.jpg" alt="#" />
+            <h2>Plate</h2>
+            <p>
+              Industrial-strength materials and construction outperform the
+              competition.
+            </p>
+            <a href="./plates.html">View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-about">
+        <img src="./images/products/p2-min.jpg" alt="#" />
+        <div class="about-txt">
+          <h1>MADE IN CHINA</h1>
+          <p>
+            Iron Force dumbbells, barbells and weight plates are manufactured
+            right here in the USA—by us—from start to finish. Our fully in-house
+            production capabilities exceed the most rigorous product standards
+            in the industry and deliver continual innovation.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-contact">
+        <div class="main-contact1">
+          <h1>NEED MORE INFORMATION?</h1>
+          <br />
+          <h1>CONTACT US.</h1>
+        </div>
+        <div class="main-contact2">
+          <p>
+            As the experts in free weights, we’re here to provide professional
+            consultation on product selection, competitive pricing, freight and
+            delivery options, and answer any other questions you may have.
+          </p>
+          <a href="./contact.html">CONTACT US</a>
+        </div>
+      </div>
+
+      <footer>
+        <div class="ftup">
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./images/logo.png" alt="Iron Force Logo"
+            /></a>
+            <h1>Iron Force</h1>
+          </div>
+          <div class="footnavbar">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./index.html">about us</a></li>
+              <li><a href="./index.html">view gallery</a></li>
+              <li><a href="./contact.html">contact us</a></li>
+            </ul>
+          </div>
+          <div class="socialmedia">
+            <a target="_blank" rel="noopener" href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a target="_blank" rel="noopener" href="https://twitter.com/">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com//">
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="ftline"></div>
+        <div class="ftdown">
+          <div class="copyright">
+            <p>Iron Force</p>
+            <i class="fa-regular fa-copyright"></i>
+            <p>2023</p>
+          </div>
+          <div class="contactdetails">
+            <p>Address: 6 Myola Court, Carindale, QLD 4152</p>
+            <p>Phones: (853) 66664766; (852) 858-6999</p>
+            <p>E-mail: info@ironforce.com</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
