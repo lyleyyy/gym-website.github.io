@@ -8,9 +8,9 @@
   margin: 0;
   box-sizing: border-box;
   cursor: none;
-  /* font-family: "Baloo 2", cursive; */
-  font-family: "Libre Franklin", sans-serif;
-  font-style: bold;
+  font-family: "Baloo 2", cursive;
+  /* font-family: "Libre Franklin", sans-serif; */
+  /* font-style: bold; */
 }
 
 .cursor {
