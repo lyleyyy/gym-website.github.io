@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,29 +14,17 @@
       src="https://kit.fontawesome.com/166f841558.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/layout.js"></script>
     <title>Iron Force</title>
   </head>
   <body>
     <div class="cursor"><img src="./images/cursor.png" /></div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="./index.html">about</a></li>
-        <li>
-          <a href="./index.html">products</a>
-          <ul class="dropdown">
-            <li><a href="#">DUMBBELL & BARBELL</a></li>
-            <li><a href="#">PLATES</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./index.html"
-            ><img src="./images/logo.png" alt="Iron Force Logo"
-          /></a>
-        </li>
-        <li><a href="./index.html">gallery</a></li>
-        <li><a href="./contact.html">contact</a></li>
-      </ul>
-    </nav>
+    <nav id="header" class="navbar"></nav>
 
     <nav class="mobile-nav">
       <div class="mobile-nav-logo">
@@ -164,7 +152,7 @@
         </div>
       </div>
 
-      <div class="main-about">
+      <div id="main-about" class="main-about">
         <img src="./images/products/p2-min.jpg" alt="#" />
         <div class="about-txt">
           <h1>MADE IN CHINA</h1>
@@ -192,53 +180,8 @@
           <a href="./contact.html">CONTACT US</a>
         </div>
       </div>
-
-      <footer>
-        <div class="ftup">
-          <div class="logo">
-            <a href="./index.html"
-              ><img src="./images/logo.png" alt="Iron Force Logo"
-            /></a>
-            <h1>Iron Force</h1>
-          </div>
-          <div class="footnavbar">
-            <ul>
-              <li><a href="./index.html">home</a></li>
-              <li><a href="./index.html">about us</a></li>
-              <li><a href="./index.html">view gallery</a></li>
-              <li><a href="./contact.html">contact us</a></li>
-            </ul>
-          </div>
-          <div class="socialmedia">
-            <a target="_blank" rel="noopener" href="https://www.facebook.com/">
-              <i class="fa-brands fa-facebook"></i
-            ></a>
-            <a target="_blank" rel="noopener" href="https://twitter.com/">
-              <i class="fa-brands fa-twitter"></i
-            ></a>
-            <a target="_blank" rel="noopener" href="https://www.instagram.com/">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" rel="noopener" href="https://www.linkedin.com//">
-              <i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-        </div>
-        <div class="ftline"></div>
-        <div class="ftdown">
-          <div class="copyright">
-            <p>Iron Force</p>
-            <i class="fa-regular fa-copyright"></i>
-            <p>2023</p>
-          </div>
-          <div class="contactdetails">
-            <p>Address: 6 Myola Court, Carindale, QLD 4152</p>
-            <p>Phones: (853) 66664766; (852) 858-6999</p>
-            <p>E-mail: info@ironforce.com</p>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer id="footer"></footer>
   </body>
-  <script src="./script.js"></script>
+  <script src="./assets/script.js"></script>
 </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Libre+Franklin:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/166f841558.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/layout.js"></script>
+    <title>IF - Contact Us</title>
+  </head>
+  <body>
+    <div class="cursor"><img src="./images/cursor.png" /></div>
+    <nav id="header" class="navbar"></nav>
+
+    <div class="route">
+      <a href="./index.html">Home</a>
+      <p>/</p>
+      <p>Contact Us</p>
+    </div>
+
+    <main>
+      <div class="contact-us">
+        <div class="contact-us-information">
+          <div class="inquiry">
+            <h1>DIRECT SALES INQUIRIES</h1>
+            <p>
+              For more information about Iron Grip products, to request a
+              proposal for your commercial fitness facility, or to place an
+              order for your home gym, please call or email us. <br /><br />We
+              look forward to hearing from you.
+            </p>
+          </div>
+          <div class="headquarter">
+            <h1>HEADQUARTERS</h1>
+            <p>
+              Toll Free: (800) 664-4766 <br />
+              Direct: (714) 850-6900 <br />
+              E-mail: info@irongrip.com
+            </p>
+          </div>
+        </div>
+        <div class="contact-us-form">
+          <h1>CONTACT US</h1>
+          <form action="https://formsubmit.co/your@email.com" method="POST">
+            <label>Full Name</label>
+            <input
+              name="fullname"
+              type="text"
+              placeholder="Your full name"
+              required
+            />
+
+            <label>Email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            />
+
+            <label>Phone Number</label>
+            <input
+              name="phonenumber"
+              type="text"
+              placeholder="Your phone number"
+              required
+            />
+
+            <label>Your City & State</label>
+            <input
+              name="location"
+              type="text"
+              placeholder="Your city and state"
+              required
+            />
+
+            <label>Your Message</label>
+            <textarea
+              name="message"
+              type="text"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
