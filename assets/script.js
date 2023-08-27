@@ -1,3 +1,8 @@
+// footer
+$(function () {
+  $("#footer").load("./assets/footer.html");
+});
+
 // custom cursor
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
@@ -6,12 +11,15 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // burgerbar navigation for responsive design
+const navMenu = document.querySelector(".nav-menu");
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".mobile-nav-menu");
+const productsLink = document.querySelector(".nav-products");
+const productsMenu = document.querySelectorAll(".mobile-nav-link");
+const angle = document.querySelector(".fa-angle-down");
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-link").forEach((n) =>
@@ -21,18 +29,24 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
+productsLink.addEventListener("click", () => {
+  angle.classList.toggle("active");
+  productsMenu.forEach((item) => {
+    item.classList.toggle("active");
+  });
+});
+
+// navLinks.addEventListener("click", () => {
+
+// });
+
 // slider
-const myslide = document.querySelectorAll(".myslider"),
-  dot = document.querySelectorAll(".radio");
+const myslide = document.querySelectorAll(".myslider");
+const dot = document.querySelectorAll(".dot");
 let counter = 1;
 
 slidefun(counter);
 
-// let timer = setInterval(autoSlide, 8000);
-// function autoSlide() {
-//   counter += 1;
-//   slidefun(counter);
-// }
 function plusSlide(n) {
   counter += n;
   slidefun(counter);
@@ -43,10 +57,6 @@ function currentSlide(n) {
   slidefun(counter);
   resetTimer();
 }
-// function resetTimer() {
-//   clearInterval(timer);
-//   timer = setInterval(autoSlide, 8000);
-// }
 
 function slidefun(n) {
   let i;
